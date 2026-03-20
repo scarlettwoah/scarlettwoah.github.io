@@ -1,0 +1,136 @@
+/* ===== HEADER ===== */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+
+/* Главный flex контейнер: логотип слева, правая часть справа */
+.header__inner {
+    max-width: 1127px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-top: 20px;
+}
+
+/* ===== LOGO ===== */
+.header__logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo a {
+    display: block;
+    line-height: 0;
+}
+
+.header__logo img {
+    width: 226px;
+    height: 113px;
+    display: block;
+    object-fit: contain;
+}
+
+/* ===== ПРАВАЯ ЧАСТЬ (Search + Nav) ===== */
+.header__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+/* Search строка — выравниваем вправо */
+.header__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Nav строка — выравниваем вправо */
+.header__bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+/* ===== SEARCH ===== */
+.header__search {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #324950;
+    width: 100%;         /* занимает всю ширину правой части */
+    max-width: 395px;    /* но не больше этого — подправь если нужно */
+    height: 29px;
+    padding-bottom: 4px;
+    background: transparent;
+}
+
+.header__search input[type="text"] {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    color: #324950;
+    padding: 0;
+    margin: 0;
+}
+
+.header__search input[type="text"]::placeholder {
+    color: #324950;
+    opacity: 1;
+}
+
+.header__search button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* ===== NAV ===== */
+.header__nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.header__nav-item {
+    padding: 0;
+    margin: 0;
+}
+
+a.header__nav-link {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    color: #324950;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a.header__nav-link:hover,
+a.header__nav-link:focus,
+a.header__nav-link:visited {
+    color: #324950;
+    text-decoration: none;
+    opacity: 0.75;
+}

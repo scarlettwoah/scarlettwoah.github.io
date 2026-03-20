@@ -1,0 +1,75 @@
+/* ===== FOOTER ===== */
+.footer {
+    width: 100%;
+}
+
+/* Верхняя часть — навигация + соцсети */
+.footer__top {
+    background-color: #2D3F45;
+    padding: 0 405px 0 405px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer__nav a {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 143%;
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer__nav a:hover {
+    opacity: 0.7;
+}
+
+.footer__social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: transparent;
+    font-size: 0;
+}
+
+.footer__social img {
+    width: 31px;
+    height: 31px;
+    display: block;
+}
+
+/* Нижняя часть — копирайт */
+.footer__bottom {
+    background-color: #324950;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copy {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #B9B9B9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

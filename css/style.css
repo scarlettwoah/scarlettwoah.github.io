@@ -1,0 +1,41 @@
+/* ===== FONTS ===== */
+/* Roboto Slab - для заголовков */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../fonts/RobotoSlab.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Heebo - для навигации (подключаем через Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+html, body {
+    font-family: 'RobotoSlab', serif;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
