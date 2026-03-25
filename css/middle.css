@@ -289,7 +289,6 @@
     display: block;
 }
 
-/* Левый лист — двигай top и left */
 .vm-left {
     width: 1000px;
     height: 1010px;
@@ -297,7 +296,6 @@
     top: 50px;
 }
 
-/* Центральный круг — двигай top, left фиксирован по центру */
 .vm-center {
     width: 375px;
     height: 375px;
@@ -306,7 +304,6 @@
     top: 55px;
 }
 
-/* Правый лист — двигай top и right */
 .vm-right {
     width: 1130px;
     height: 1078px;
@@ -411,8 +408,197 @@
     text-align: center;
 }
 
-
-/* Поднимаем помидор выше */
 .activities__card:nth-child(2) .activities__card-img {
     margin-bottom: 70px;
+}
+
+
+/* ===== TOMATO ALL PAGE ===== */
+
+/* Hero банер */
+.header--white {
+    position: relative;
+    background: #ffffff;
+}
+
+.tomato-hero {
+    width: 100%;
+    height: 480px;
+    background-image: url('/images/tomato-bg.png');
+    background-size: cover;
+    background-position: center 78%;
+    position: relative;
+}
+
+.tomato-hero__label {
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background: transparent;
+}
+
+/* ===== TOMATO CONTENT SECTION ===== */
+.tomato-content {
+    background-color: #FCF0F0;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.tomato-content__inner {
+    max-width: 1127px;
+    margin: 0 auto;
+}
+
+.tomato-content__title {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 143%;
+    color: #324950;
+    margin-bottom: 16px;
+}
+
+.tomato-content__text {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+    margin-bottom: 24px;
+}
+
+.tomato-content__text strong {
+    font-weight: 700;
+}
+
+.tomato-content__quote {
+    border-left: 4px solid #EB5757;
+    border-radius: 4px;
+    padding-left: 20px;
+    margin: 24px 0;
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+    min-height: 55px;
+}
+
+/* ===== 3 КОЛОНКИ ===== */
+.tomato-columns {
+    background-color: #FFFAFA;
+    width: 100%;
+    max-width: 1152px;
+    min-height: 449px;
+    margin: 40px auto 0 auto;
+    padding: 1.5% 1.1%;
+    display: flex;
+    gap: 3%;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.tomato-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tomato-col__title {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 143%;
+    color: #324950;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.tomato-col__line {
+    width: 100%;
+    height: 1px;
+    background-color: #324950;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+}
+
+.tomato-col__text {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+    margin-bottom: 0;
+}
+
+.tomato-col__text strong {
+    font-weight: 700;
+}
+
+/* ===== ГАЛЕРЕЯ ===== */
+.tomato-quote-row {
+    border-left: 4px solid #EB5757;
+    border-radius: 4px;
+    padding-left: 16px;
+    margin: 40px auto 40px 405px;
+    width: 1110px;
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 220%;
+    color: #324950;
+}
+
+.tomato-gallery {
+    width: 1110px;
+    margin: 0 auto -10px 405px;  
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+    padding: 0;
+}
+
+.tomato-card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.tomato-card__img-wrap {
+    width: 350px;
+    height: 321px;
+    overflow: hidden;
+}
+
+.tomato-card__img-wrap img {
+    width: 350px;
+    height: 321px;
+    object-fit: cover;
+    display: block;
+}
+.tomato-card__info {
+    background-color: #ffffff;
+    padding: 10px 10px 12px 10px;
+    text-align: center;
+}
+
+.tomato-card__tag {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 143%;
+    color: #57984C;
+    text-align: center;
+    margin: 0;
+}
+
+.tomato-card__desc {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #57984C;
+    text-align: center;
+    margin: 0;
 }

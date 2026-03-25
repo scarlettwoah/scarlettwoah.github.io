@@ -134,3 +134,37 @@ a.header__nav-link:visited {
     text-decoration: none;
     opacity: 0.75;
 }
+
+/* ===== БІЛИЙ ХЕДЕР (tomato_all) ===== */
+.header--white {
+    position: relative;
+    background: #ffffff;
+}
+
+.header--white .header__inner {
+    align-items: stretch;
+    padding-top: 0;
+}
+
+.header--white .header__logo {
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header--white .header__logo img {
+    width: 166px;
+    height: 83px;
+}
+
+.header--white .header__right {
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.header--white .header__top {
+    padding-top: 20px;
+}
+
+.header--white .header__bottom {
+    padding-bottom: 20px;
+}
