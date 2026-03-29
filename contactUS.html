@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Agridera</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/middle.css">
+</head>
+<body>
+
+    <!-- HEADER (белый, как в tomato pages) -->
+    <header class="header header--white">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Agridera logo">
+                </a>
+            </div>
+            <div class="header__right">
+                <div class="header__top">
+                    <div class="header__search">
+                        <input type="text" placeholder="Search">
+                        <button type="button">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#324950" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a class="header__nav-link" href="index.html">Home</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Company Profile</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="tomato_all.html">Products</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">Services</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="#">R &amp; D</a></li>
+                            <li class="header__nav-item"><a class="header__nav-link active" href="contactUS.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO ФОТО -->
+    <div class="contact-hero">
+        <img src="images/bg_contactUS.png" alt="Contact us background">
+    </div>
+
+    <!-- MAIN -->
+    <main class="contact-main">
+        <div class="contact-inner">
+
+            <!-- Заголовок -->
+            <h1 class="contact-title">Contact us</h1>
+
+            <!-- Крестики -->
+            <div class="dots-row">
+                <span class="dot-cross"></span>
+                <span class="dot-cross"></span>
+                <span class="dot-cross"></span>
+                <span class="dot-cross"></span>
+                <span class="dot-cross"></span>
+            </div>
+
+            <!-- ФОРМА -->
+            <div class="contact-form">
+
+                <!-- Левая колонка -->
+                <div class="contact-form__group">
+                    <label class="contact-form__label">Name *</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <!-- Правая колонка: You are a -->
+                <div class="contact-form__group">
+                    <label class="contact-form__label">You are a</label>
+                    <div class="contact-form__select-wrap">
+                        <select class="contact-form__select">
+                            <option>seed producer</option>
+                            <option>distributor</option>
+                            <option>farmer</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">Company Name</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">If other, please specify</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">Position</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <!-- You are interested in — textarea, span 4 строки справа -->
+                <div class="contact-form__group contact-form__group--textarea">
+                    <label class="contact-form__label">You are interested in</label>
+                    <textarea class="contact-form__textarea"></textarea>
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">City</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">Country</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">Telephone</label>
+                    <input class="contact-form__input" type="text">
+                </div>
+
+                <div class="contact-form__group">
+                    <label class="contact-form__label">Email *</label>
+                    <input class="contact-form__input" type="email">
+                </div>
+
+                <!-- Каптча + кнопка (правая колонка) -->
+                <div class="contact-form__bottom">
+                    <p class="contact-form__captcha-label">Please type this code</p>
+                    <div class="contact-form__captcha-row">
+                        <img class="contact-form__captcha-img" src="images/contact_captcha.png" alt="captcha">
+                        <input class="contact-form__captcha-input" type="text">
+                        <button class="btn-send" type="submit">Send Message</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- OUR ADDRESS — отдельная секция с белым фоном -->
+    <section class="contact-address">
+        <div class="contact-address__inner">
+            <div class="contact-address__title">Our Address</div>
+            <p class="contact-address__text">
+                AGRIDERA Seeds &amp; Agriculture Ltd.<br>
+                PO Box 103,<br>
+                Gedera 70750, Israel.<br>
+                Telephone: <a href="tel:+97289449222">+972 8 944 9222</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__top">
+            <nav class="footer__nav">
+                <a href="#">PROFILE</a>
+                <a href="#">MANAGEMENT</a>
+                <a href="tomato_all.html">PRODUCTS</a>
+                <a href="#">R&amp;D</a>
+                <a href="#">LINKS</a>
+                <a href="#">SITEMAP</a>
+                <a href="contactUS.html">CONTACT</a>
+            </nav>
+            <div class="footer__social">
+                <a href="#"><img src="images/Ico_in.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/Ico_inst.png" alt="Instagram"></a>
+                <a href="#"><img src="images/Ico_tube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/Ico_tw.png" alt="Twitter"></a>
+                <a href="#"><img src="images/Ico_fb.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">AGRIDERA SEEDS &amp; AGRICULTURE LTD. © 2020</p>
+        </div>
+    </footer>
+
+</body>
+</html>

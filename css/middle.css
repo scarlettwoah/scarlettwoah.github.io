@@ -877,3 +877,258 @@
     font-size: 17px;
     color: #57984C;
 }
+
+/* ================================================
+   CONTACT US PAGE
+   ================================================ */
+ 
+/* Hero фото */
+.contact-hero {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+ 
+.contact-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+ 
+/* Основная секция */
+.contact-main {
+    background-color: #F7F7F7;
+    padding-bottom: 60px;
+}
+ 
+.contact-inner {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 48px;
+}
+ 
+/* Заголовок Contact us */
+.contact-title {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 143%;
+    color: #324950;
+    margin: 0 0 0 0;
+}
+
+.contact-main .dots-row {
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+}
+ 
+/* ===== ФОРМА ===== */
+.contact-form {
+    display: grid;
+    grid-template-columns: 350px 635px;
+    column-gap: 125px;
+    row-gap: 0;
+}
+ 
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+ 
+.contact-form__label {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+    margin-bottom: 6px;
+}
+ 
+.contact-form__input,
+.contact-form__select {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 0 14px;
+    font-family: 'RobotoSlab', serif;
+    font-size: 17px;
+    color: #324950;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+}
+ 
+.contact-form__input:focus,
+.contact-form__select:focus {
+    border-color: #57984C;
+}
+ 
+/* Селект со стрелкой */
+.contact-form__select-wrap {
+    position: relative;
+}
+ 
+.contact-form__select-wrap::after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #324950;
+    pointer-events: none;
+}
+ 
+/* Большое текстовое поле */
+.contact-form__textarea {
+    width: 100%;
+    height: 391px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 14px;
+    font-family: 'RobotoSlab', serif;
+    font-size: 17px;
+    color: #324950;
+    outline: none;
+    resize: none;
+    line-height: 150%;
+    box-sizing: border-box;
+}
+ 
+.contact-form__textarea:focus {
+    border-color: #57984C;
+}
+ 
+/* Правая колонка: textarea занимает 4 строки */
+.contact-form__group--textarea {
+    grid-row: span 4;
+    margin-bottom: 18px;
+}
+ 
+/* Строка с каптчей и кнопкой — правая колонка */
+.contact-form__bottom {
+    grid-column: 2;
+    margin-top: 0;
+}
+ 
+.contact-form__captcha-label {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+    margin-bottom: 8px;
+}
+ 
+.contact-form__captcha-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+ 
+.contact-form__captcha-img {
+    display: block;
+    width: 99px;
+    height: 27px;
+    flex-shrink: 0;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+ 
+.contact-form__captcha-input {
+    width: 225px;
+    height: 55px;
+    border: 1px solid #DADADA;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 0 14px;
+    font-family: 'RobotoSlab', serif;
+    font-size: 17px;
+    color: #324950;
+    outline: none;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+ 
+.contact-form__captcha-input:focus {
+    border-color: #57984C;
+}
+ 
+.btn-send {
+    height: 55px;
+    width: 255px;
+    background: #57984C;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 60px;
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 200%;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+ 
+.btn-send:hover {
+    background: #4a8040;
+}
+ 
+/* ===== OUR ADDRESS */
+.contact-address {
+    width: 100%;
+    background: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+}
+ 
+.contact-address__inner {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.contact-address__title {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 143%;
+    color: #57984C;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #57984C;
+    width: 183px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+ 
+.contact-address__text {
+    font-family: 'RobotoSlab', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #324950;
+    text-align: center;
+}
+ 
+.contact-address__text a {
+    color: #57984C;
+    text-decoration: none;
+}
+ 
+.contact-address__text a:hover {
+    text-decoration: underline;
+}
