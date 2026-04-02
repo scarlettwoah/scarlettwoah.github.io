@@ -1132,3 +1132,35 @@
 .contact-address__text a:hover {
     text-decoration: underline;
 }
+
+/* ===== CART BUTTONS ===== */
+.btn-cart {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 14px 32px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-cart--add {
+    background-color: #57984C;
+    color: #ffffff;
+}
+
+.btn-cart--add:hover {
+    opacity: 0.85;
+}
+
+.btn-cart--go {
+    background-color: #324950;
+    color: #ffffff;
+}
+
+.btn-cart--go:hover {
+    opacity: 0.85;
+    color: #ffffff;
+}

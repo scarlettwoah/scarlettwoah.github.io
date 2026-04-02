@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us – Agridera</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/middle.css">
 </head>
 <body>
@@ -44,6 +45,13 @@
                     </nav>
                 </div>
             </div>
+
+            <!-- Бургер кнопка -->
+            <button class="burger" id="burger" aria-label="Menu">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
         </div>
     </header>
 
@@ -185,5 +193,12 @@
         </div>
     </footer>
 
+    <script>
+        var burger = document.getElementById("burger");
+        var nav = document.querySelector(".header__right");
+        burger.addEventListener("click", function() {
+            nav.classList.toggle("is-open");
+        });
+    </script>
 </body>
 </html>

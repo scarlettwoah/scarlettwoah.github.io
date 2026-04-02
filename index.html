@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/middle.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -17,14 +18,12 @@
     <header class="header">
         <div class="header__inner">
 
-            <!-- Логотип слева -->
             <div class="header__logo">
                 <a href="index.html">
                     <img src="images/logo.png" alt="Agridera logo">
                 </a>
             </div>
 
-            <!-- Правая часть: Search сверху + Nav снизу -->
             <div class="header__right">
                 <div class="header__top">
                     <div class="header__search">
@@ -37,7 +36,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div class="header__bottom">
                     <nav class="header__nav">
                         <ul class="header__nav-list">
@@ -51,6 +49,13 @@
                     </nav>
                 </div>
             </div>
+
+            <!-- Бургер кнопка -->
+            <button class="burger" id="burger" aria-label="Menu">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
 
         </div>
     </header>
@@ -66,119 +71,95 @@
     <!-- ICONS ROW -->
     <section class="icons-row">
         <div class="icons-row__inner">
-
             <div class="icons-row__item">
                 <img src="images/icon-wheat.svg" alt="Wheat">
                 <span>Wheat</span>
             </div>
-
             <div class="icons-row__item">
                 <img src="images/icon-watermelon.svg" alt="Confection Watermelon">
                 <span>Confection Watermelon</span>
             </div>
-
             <div class="icons-row__item">
                 <img src="images/icon-clover.svg" alt="Clover">
                 <span>Clover</span>
             </div>
-
             <div class="icons-row__item">
                 <img src="images/icon-sunflower.svg" alt="Confection Sunflower">
                 <span>Confection Sunflower</span>
             </div>
-
             <div class="icons-row__item">
                 <img src="images/icon-tomato.svg" alt="Tomato">
                 <span>Tomato</span>
             </div>
-
             <div class="icons-row__item">
                 <img src="images/icon-eggplant.svg" alt="Eggplant P/O">
                 <span>Eggplant P/O</span>
             </div>
-
             <div class="icons-row__item">
                 <img src="images/icon-ornamental.svg" alt="Ornamental Sunflower">
                 <span>Ornamental Sunflower</span>
             </div>
-
         </div>
     </section>
 
-    <!-- VISION + MISSION wrapper с овалами -->
+    <!-- VISION + MISSION -->
     <div class="vm-wrapper">
-
-        <!-- Левый лист -->
         <div class="vm-shape vm-left">
             <svg viewBox="0 0 1027 1098" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M397.029 268.003C325.993 245.4 251.727 229.255 177.461 222.797C117.069 218.483 55.2355 219.933 -6.11356 221.371C-36.6085 222.085 -66.9822 222.797 -97 222.797V280.918C-97 732.971 267.871 1097.84 719.925 1097.84H929.806V781.406C942.722 506.945 613.369 342.268 397.029 268.003Z" fill="white"/>
             </svg>
         </div>
-
-        <!-- Центральный круг -->
         <div class="vm-shape vm-center">
             <svg viewBox="0 0 375 375" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="187.5" cy="187.5" r="187.5" fill="white"/>
             </svg>
         </div>
-
-        <!-- Правый лист -->
         <div class="vm-shape vm-right">
             <svg viewBox="-97 0 1124 1098" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1); overflow: visible;">
                 <path d="M397.029 268.003C325.993 245.4 251.727 229.255 177.461 222.797C117.069 218.483 55.2355 219.933 -6.11356 221.371C-36.6085 222.085 -66.9822 222.797 -97 222.797V280.918C-97 732.971 267.871 1097.84 719.925 1097.84H929.806V781.406C942.722 506.945 613.369 342.268 397.029 268.003Z" fill="white"/>
             </svg>
         </div>
 
-    <!-- VISION -->
-    <section class="vision">
-        <div class="vision__inner">
-            <div class="vision__text">
-                <h2 class="vision__title">Vision</h2>
-                <div class="dots-row"><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span></div>
-                <p class="vision__desc">We believe in long-term growth with an emphasis on the potential of emerging markets. We also support the global need of feeding the growing population.</p>
-            </div>
-            <div class="vision__image">
-                <img src="images/vision.png" alt="Vision">
-            </div>
-        </div>
-    </section>
-
-    <!-- MISSION -->
-    <section class="mission">
-        <div class="mission__inner">
-            <div class="mission__image">
-                <img src="images/mission.png" alt="Mission">
-                <div class="mission__play">
-                    <svg viewBox="0 0 24 24" fill="#57984C">
-                        <polygon points="5,3 19,12 5,21"/>
-                    </svg>
+        <section class="vision">
+            <div class="vision__inner">
+                <div class="vision__text">
+                    <h2 class="vision__title">Vision</h2>
+                    <div class="dots-row"><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span></div>
+                    <p class="vision__desc">We believe in long-term growth with an emphasis on the potential of emerging markets. We also support the global need of feeding the growing population.</p>
+                </div>
+                <div class="vision__image">
+                    <img src="images/vision.png" alt="Vision">
                 </div>
             </div>
-            <div class="mission__text">
-                <h2 class="mission__title">Mission</h2>
-                <div class="dots-row"><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span></div>
-                <p class="mission__desc">Breeding and marketing seeds for advanced field crops and vegetable varieties that provide an added value to all supply chain partners.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    </div><!-- end vm-wrapper -->
+        <section class="mission">
+            <div class="mission__inner">
+                <div class="mission__image">
+                    <img src="images/mission.png" alt="Mission">
+                    <div class="mission__play">
+                        <svg viewBox="0 0 24 24" fill="#57984C">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mission__text">
+                    <h2 class="mission__title">Mission</h2>
+                    <div class="dots-row"><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span></div>
+                    <p class="mission__desc">Breeding and marketing seeds for advanced field crops and vegetable varieties that provide an added value to all supply chain partners.</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- MAIN ACTIVITIES -->
     <section class="activities">
         <div class="activities__inner">
-
             <h2 class="activities__title">Agridera's main activities</h2>
             <div class="dots-row activities__dots">
-                <span class="dot-cross"></span>
-                <span class="dot-cross"></span>
-                <span class="dot-cross"></span>
-                <span class="dot-cross"></span>
-                <span class="dot-cross"></span>
+                <span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span><span class="dot-cross"></span>
             </div>
-
             <div class="activities__cards">
-
                 <div class="activities__card">
                     <div class="activities__card-img">
                         <img src="images/wheat.png" alt="Open field crop seeds">
@@ -187,7 +168,6 @@
                     <div class="activities__card-line"></div>
                     <p class="activities__card-desc">wheat, cotton, legumes,<br>hybrid confection sunflower</p>
                 </div>
-
                 <div class="activities__card">
                     <div class="activities__card-img">
                         <img src="images/tomato.png" alt="Vegetable seeds">
@@ -196,7 +176,6 @@
                     <div class="activities__card-line"></div>
                     <p class="activities__card-desc">hybrid open field tomatoes,<br>eggplant, onion, paprika, etc.</p>
                 </div>
-
                 <div class="activities__card">
                     <div class="activities__card-img">
                         <img src="images/sunflower.jpg" alt="Ornamental seeds">
@@ -205,16 +184,12 @@
                     <div class="activities__card-line"></div>
                     <p class="activities__card-desc">hybrid cut sunflowers, hybrid<br>patio tomatoes, Bells of Irland, etc.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <!-- FOOTER -->
     <footer class="footer">
-
-        <!-- Верхняя часть: навигация + соцсети -->
         <div class="footer__top">
             <nav class="footer__nav">
                 <a href="#">PROFILE</a>
@@ -225,7 +200,6 @@
                 <a href="#">SITEMAP</a>
                 <a href="contactUS.html">CONTACT</a>
             </nav>
-
             <div class="footer__social">
                 <a href="#"><img src="images/Ico_in.png" alt="LinkedIn"></a>
                 <a href="#"><img src="images/Ico_inst.png" alt="Instagram"></a>
@@ -234,16 +208,20 @@
                 <a href="#"><img src="images/Ico_fb.png" alt="Facebook"></a>
             </div>
         </div>
-
-        <!-- Нижняя часть: копирайт -->
         <div class="footer__bottom">
             <p class="footer__copy">AGRIDERA SEEDS &amp; AGRICULTURE LTD. © 2020</p>
         </div>
-
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        var burger = document.getElementById("burger");
+        var nav = document.querySelector(".header__right");
+        burger.addEventListener("click", function() {
+            nav.classList.toggle("is-open");
+        });
+    </script>
 </body>
 </html>
