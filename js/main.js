@@ -39,11 +39,26 @@ var app = new Vue({
       },
     ],
     product: [],
+    cart: [],
     btnVisible: 0,
+    orderSent: false,
+    contactFields: {
+      name: "",
+      company: "",
+      position: "",
+      city: "",
+      country: "",
+      telephone: "",
+      email: "",
+      youAre: "seed producer",
+      ifOther: "",
+      interested: "",
+    },
   },
   mounted() {
     this.getProduct();
     this.checkInCart();
+    this.getCart();
   },
   methods: {
     getProduct() {
@@ -75,6 +90,32 @@ var app = new Vue({
           this.btnVisible = 1;
         }
       }
+    },
+    getCart() {
+      var cartIds = JSON.parse(localStorage.getItem("cart")) || [];
+      var self = this;
+      this.cart = this.products.filter(function (p) {
+        return cartIds.includes(p.id);
+      });
+    },
+    removeFromCart(id) {
+      // Видалити з масиву cart
+      this.cart = this.cart.filter(function (p) {
+        return p.id !== id;
+      });
+      // Видалити з localStorage
+      var cartIds = JSON.parse(localStorage.getItem("cart")) || [];
+      cartIds = cartIds.filter(function (cartId) {
+        return cartId !== id;
+      });
+      localStorage.setItem("cart", JSON.stringify(cartIds));
+    },
+    makeOrder() {
+      // Очистити кошик
+      this.cart = [];
+      localStorage.removeItem("cart");
+      // Показати підтвердження
+      this.orderSent = true;
     },
   },
 });
